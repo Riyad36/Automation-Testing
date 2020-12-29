@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace Selenium_Webdriver
             IWebElement element3 = driver.FindElement(By.XPath("//*[@id='loginbtn']"));
             element3.Click();
         }
-
+        
         [TearDown]
         public void closeBrowser()
         {
